@@ -3,11 +3,11 @@
 /* ********************************************************************/
 
 /* System headers and application specific headers: */
-#include "menu.h"
-#include "sorting.h"
+#include "include/menu.h"
+#include "include/sorting.h"
 
 /* Private constants: */
-#define FILE_NAME "books.bin"
+#define FILE_NAME "data/books.bin"
 
 /* Private types: */
 

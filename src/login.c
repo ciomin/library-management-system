@@ -3,11 +3,11 @@
 /* ********************************************************************/
 
 /* System headers and application specific headers: */
-#include "login.h"
-#include "menu.h"
+#include "include/login.h"
+#include "include/menu.h"
 
 /* Private constants: */
-#define FILE_NAME "login.bin"
+#define FILE_NAME "data/login.bin"
 
 /* Private types: */
 

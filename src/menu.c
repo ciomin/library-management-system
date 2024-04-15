@@ -3,9 +3,9 @@
 /* ********************************************************************/
 
 /* System headers and application specific headers: */
-#include "menu.h"
-#include "login.h"
-#include "database.h"
+#include "include/menu.h"
+#include "include/login.h"
+#include "include/database.h"
 
 /* Private constants: */
 

@@ -1,13 +1,13 @@
 /* ********************************************************************/
-/* sorting.c -  See sorting.h for copyright and info                          */
+/* sorting.c -  See sorting.h for copyright and info                  */
 /* ********************************************************************/
 
 /* System headers and application specific headers: */
-#include "menu.h"
-#include "sorting.h"
+#include "include/menu.h"
+#include "include/sorting.h"
 
 /* Private constants: */
-#define FILE_NAME "books.bin"
+#define FILE_NAME "data/books.bin"
 
 /* Private types: */
 
@@ -19,15 +19,15 @@
 
 /* Implementation of the public functions: */
 /* ****************************************************************************/
-/* FUNCTION NAME: swapStruct                                                                  */
-/* DESCRIPTION: function that swaps two structures                                   */
-/* ARGUMENT LIST:                                                                                       */
-/* Argument      Type       IO        Description                                                */
-/* -------     ----------- -------- ------------------------------                          */
-/* Books*        struct1        I        gets swapped with struct2                          */
-/* Books*        struct2        I        gets swapped with struct1                          */
-/* RETURN VALUE: void                                                                                 */
-/* CHANGES: -                                                                                               */
+/* FUNCTION NAME: swapStruct                                                  */
+/* DESCRIPTION: function that swaps two structures                            */
+/* ARGUMENT LIST:                                                             */
+/* Argument      Type       IO        Description                             */
+/* -------     ----------- -------- ------------------------------            */
+/* Books*        struct1        I        gets swapped with struct2            */
+/* Books*        struct2        I        gets swapped with struct1            */
+/* RETURN VALUE: void                                                         */
+/* CHANGES: -                                                                 */
 /* ****************************************************************************/
 void swapStruct(Books *struct1, Books *struct2) {
     Books temp = {0};
@@ -37,11 +37,11 @@ void swapStruct(Books *struct1, Books *struct2) {
 }
 
 /* ****************************************************************************/
-/* FUNCTION NAME: showTable                                                                   */
-/* DESCRIPTION: displays the frame of the table                                          */
-/* ARGUMENT LIST:                                                                                       */
-/* RETURN VALUE: void                                                                                 */
-/* CHANGES: -                                                                                               */
+/* FUNCTION NAME: showTable                                                   */
+/* DESCRIPTION: displays the frame of the table                               */
+/* ARGUMENT LIST:                                                             */
+/* RETURN VALUE: void                                                         */
+/* CHANGES: -                                                                 */
 /* ****************************************************************************/
 void showTable() {
     const char *id = "ID";
@@ -54,16 +54,16 @@ void showTable() {
 }
 
 /* ****************************************************************************/
-/* FUNCTION NAME: sortByID                                                                      */
-/* DESCRIPTION: sorts the structures by their ID                                          */
-/* ARGUMENT LIST:                                                                                       */
-/* Argument                   Type           IO        Description                               */
-/* --------------         -------------  --------  -----------------------------------*/
-/* Books*                     holdBooks        I        holds the array of structures    */
-/* unsigned int              count              I        holds the size of holdBooks     */
-/* unsigned short int     order              I        handles ASCENDING/DESCENDING order */
-/* RETURN VALUE: void                                                                                  */
-/* CHANGES: -                                                                                                */
+/* FUNCTION NAME: sortByID                                                               */
+/* DESCRIPTION: sorts the structures by their ID                                         */
+/* ARGUMENT LIST:                                                                        */
+/* Argument                   Type           IO        Description                       */
+/* --------------         -------------  --------  -----------------------------------   */
+/* Books*                   holdBooks        I        holds the array of structures      */
+/* unsigned int             count            I        holds the size of holdBooks        */
+/* unsigned short int       order            I        handles ASCENDING/DESCENDING order */
+/* RETURN VALUE: void                                                                    */
+/* CHANGES: -                                                                            */
 /* *****************************************************************************/
 void sortByID(Books *holdBooks, unsigned int count, unsigned short int order) {
     unsigned int i = 0, j = 0;
@@ -88,18 +88,18 @@ void sortByID(Books *holdBooks, unsigned int count, unsigned short int order) {
     }
 }
 
-/* ****************************************************************************/
-/* FUNCTION NAME: sortByName                                                                */
-/* DESCRIPTION: sorts the structures by their book names                          */
-/* ARGUMENT LIST:                                                                                       */
-/* Argument                   Type           IO        Description                               */
+/* ************************************************************************************/
+/* FUNCTION NAME: sortByName                                                          */
+/* DESCRIPTION: sorts the structures by their book names                              */
+/* ARGUMENT LIST:                                                                     */
+/* Argument                   Type           IO        Description                    */
 /* --------------         -------------  --------  -----------------------------------*/
-/* Books*                     holdBooks        I        holds the array of structures   */
-/*  unsigned int              count              I        holds the size of holdBooks   */
-/* unsigned short int     order              I        handles ASCENDING/DESCENDING order */
-/* RETURN VALUE: void                                                                                 */
-/* CHANGES: -                                                                                               */
-/* ****************************************************************************/
+/* Books*                 holdBooks          I     holds the array of structures      */
+/* unsigned int           count              I     holds the size of holdBooks        */
+/* unsigned short int     order              I     handles ASCENDING/DESCENDING order */
+/* RETURN VALUE: void                                                                 */
+/* CHANGES: -                                                                         */
+/* ************************************************************************************/
 void sortByName(Books *holdBooks, unsigned int count, unsigned short int order) {
     unsigned int i = 0, j = 0;
 

@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /* Include modules header that are directly involved */
-#include "menu.h"
+#include "include/menu.h"
 
 
 int main() {
