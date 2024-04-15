@@ -1,0 +1,83 @@
+# depslib dependency file v1.0
+1634128216 source:d:\codeblocks\library\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1634127616 d:\codeblocks\library\menu.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"database.h"
+
+1634127577 d:\codeblocks\library\database.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1634124922 source:d:\projects\codeblocks\library\main.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1634124016 d:\projects\codeblocks\library\menu.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"database.h"
+
+1634123977 d:\projects\codeblocks\library\database.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1634124079 source:d:\projects\codeblocks\library\database.c
+	"menu.h"
+	"sorting.h"
+
+1634124015 d:\projects\codeblocks\library\sorting.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"database.h"
+
+1634127577 source:d:\projects\codeblocks\library\database.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1634123848 source:d:\projects\codeblocks\library\login.c
+	"login.h"
+	"menu.h"
+
+1634123945 d:\projects\codeblocks\library\login.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1634127545 source:d:\projects\codeblocks\library\login.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1634123847 source:d:\projects\codeblocks\library\menu.c
+	"menu.h"
+	"login.h"
+	"database.h"
+
+1634127616 source:d:\projects\codeblocks\library\menu.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"database.h"
+
+1634123849 source:d:\projects\codeblocks\library\sorting.c
+	"menu.h"
+	"sorting.h"
+
+1634127615 source:d:\projects\codeblocks\library\sorting.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"database.h"
+
